@@ -20,7 +20,7 @@ Developer 2 Security
 
 This repository contains **hands-on cybersecurity tools and projects** built by D2S as part of an active learning journey into **ethical hacking**, **penetration testing**, and **web security**.
 
-Every tool here is built from scratch — to understand the *why*, not just the *what*.
+Every tool here is built from scratch And These projects are built as part of my cybersecurity learning journey. AI is used as a learning assistant, while I study, modify, and understand the code before publishing it.— to understand the *why*, not just the *what*.
 
 ---
 
