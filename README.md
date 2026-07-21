@@ -83,7 +83,7 @@ Total open ports: 3
 `Python` `Web Security`
 
 ```
-check security issue in website or victim website 
+Analyze a target web application for common security misconfigurations.
 ```
 **Features:**
 - DNS LOOKUP AND IP LOOKUP
