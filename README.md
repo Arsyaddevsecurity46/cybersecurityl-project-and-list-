@@ -79,14 +79,133 @@ Total open ports: 3
 
 ---
 
-### 02 — Coming Soon 🚧
+### 02 — Recon Tool — automated web reconnaissance
 `Python` `Web Security`
 
 ```
-Recon Tool — automated web reconnaissance
+check security issue in website or victim website 
+```
+**Features:**
+- DNS LOOKUP AND IP LOOKUP
+- HTTP headers analysis 
+- form and input analysis
+- senstive files check
+- technology fingerprinting or footprtinting
+- robots,txt analysis
+- report generation 
+
+**Sample Output:**
+```
+╔══════════════════════════════════════════╗
+║                                          ║
+║   ██████╗ ██████╗ ███████╗              ║
+║   ██╔══██╗╚════██╗██╔════╝              ║
+║   ██║  ██║ █████╔╝███████╗              ║
+║   ██║  ██║██╔═══╝ ╚════██║              ║
+║   ██████╔╝███████╗███████║              ║
+║   ╚═════╝ ╚══════╝╚══════╝              ║
+║                                          ║
+║   Web Reconnaissance Tool v1.0           ║
+║   Developer 2 Security                   ║
+║   Pulau Pinang, Malaysia 🇲🇾             ║
+║                                          ║
+╚══════════════════════════════════════════╝
+
+  ⚠️  For authorized testing only!
+
+  Enter target URL: localhost/sistem-kehadiran/login.php 
+
+  Starting recon on: http://localhost/sistem-kehadiran/login.php
+  2026-07-21 23:17:27
+
+
+[MODULE 1] DNS & IP Lookup
+─────────────────────────────────────────────
+  ✅ Hostname : localhost
+  ✅ IP Address: 127.0.0.1
+  ✅ Reverse DNS: LAPTOP-73JMDB26
+
+[MODULE 2] HTTP Headers Analysis
+─────────────────────────────────────────────
+  Status Code: 404
+  Final URL  : http://localhost/sistem-kehadiran/login.php
+
+  [Security Headers]
+  ❌ MISSING: Strict-Transport-Security
+     └─ HSTS — Force HTTPS
+  ❌ MISSING: X-Frame-Options
+     └─ Clickjacking protection
+  ❌ MISSING: X-XSS-Protection
+     └─ XSS filter (legacy)
+  ❌ MISSING: X-Content-Type-Options
+     └─ MIME sniffing protection
+  ❌ MISSING: Content-Security-Policy
+     └─ CSP — XSS/injection protection
+  ❌ MISSING: Referrer-Policy
+     └─ Referrer info control
+  ❌ MISSING: Permissions-Policy
+     └─ Browser features control
+
+  [Information Disclosure]
+  ⚠️  Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.1.25
+     └─ Risk: Version info exposed to attacker!
+  ✅ X-Powered-By: Not exposed
+  ✅ X-AspNet-Version: Not exposed
+  ✅ X-AspNetMvc-Version: Not exposed
+
+[MODULE 4] Sensitive Files & Directories
+─────────────────────────────────────────────
+  ✅ [404]: /config.php
+  ✅ [404]: /.env
+  ✅ [404]: /config.yml
+  ✅ [404]: /config.json
+  ✅ [404]: /settings.py
+  ✅ [404]: /admin
+  ✅ [404]: /admin.php
+  ✅ [404]: /administrator
+  ✅ [404]: /wp-admin
+  ✅ [404]: /phpmyadmin
+  ✅ [404]: /cpanel
+  ✅ [404]: /backup.zip
+  ✅ [404]: /backup.sql
+  ✅ [404]: /backup.tar.gz
+  ✅ [404]: /db.sql
+  ✅ [404]: /database.sql
+  ✅ [404]: /robots.txt
+  ✅ [404]: /sitemap.xml
+  ✅ [404]: /.git
+  ✅ [404]: /.git/config
+  ✅ [404]: /server-status
+  ✅ [404]: /info.php
+  ✅ [404]: /phpinfo.php
+  ✅ [404]: /upload
+  ✅ [404]: /uploads
+  ✅ [404]: /files
+  ✅ [404]: /shell.php
+
+  Summary: 0 sensitive paths found!
+
+[MODULE 6] Robots.txt Analysis
+─────────────────────────────────────────────
+  ⚠️  robots.txt not found (404)
+
+[REPORT] D2S Recon Summary
+═════════════════════════════════════════════
+  Target  : http://localhost/sistem-kehadiran/login.php
+  Date    : 2026-07-21 23:17:28
+  Tool    : D2S Web Recon v1.0
+═════════════════════════════════════════════
+
+  ⚠️  FINDINGS:
+  ✅ No critical issues found
+
+═════════════════════════════════════════════
+  D2S — Developer 2 Security
+  📍 Pulau Pinang, Malaysia
+═════════════════════════════════════════════
+
 ```
 
----
 
 ### 03 — Coming Soon 🚧
 `Python` `Cryptography`
